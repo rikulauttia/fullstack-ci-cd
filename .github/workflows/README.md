@@ -55,7 +55,7 @@ The **Fullstack Blog App** is a feature-rich **MERN** (MongoDB, Express.js, Reac
 
 ---
 
-## 🚀 Deployment & CI/CD Workflow
+## Deployment & CI/CD Workflow
 
 ### **🔹 GitHub Actions Workflow**
 
