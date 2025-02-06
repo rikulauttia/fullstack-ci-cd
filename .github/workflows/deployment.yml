@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint backend code (does not fail pipeline)
         working-directory: backend
-        run: npm run lint || true
+        run: npm run lint
 
   deploy_backend:
     needs: [backend_pipeline]
@@ -37,9 +37,9 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         env:
           RENDER_SERVICE_ID: ${{ secrets.RENDER_BACKEND_SERVICE_ID }}
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_API_KEY: ${{ secrets.RENDER_BACKEND_API_KEY }}
         run: |
-          curl -X GET "https://api.render.com/deploy/srv-${{ secrets.RENDER_BACKEND_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}"
+          curl -X GET "https://api.render.com/deploy/srv-${{ secrets.RENDER_BACKEND_SERVICE_ID }}?key=${{ secrets.RENDER_BACKEND_API_KEY }}"
 
   frontend_pipeline:
     needs: [deploy_backend]
@@ -63,7 +63,7 @@ jobs:
 
       - name: Lint frontend code (does not fail pipeline)
         working-directory: frontend
-        run: npm run lint || true
+        run: npm run lint
 
   deploy_frontend:
     needs: [frontend_pipeline]
@@ -73,9 +73,9 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         env:
           RENDER_FRONTEND_SERVICE_ID: ${{ secrets.RENDER_FRONTEND_SERVICE_ID }}
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+          RENDER_API_KEY: ${{ secrets.RENDER_FRONTEND_API_KEY }}
         run: |
-          curl -X GET "https://api.render.com/deploy/srv-${{ secrets.RENDER_FRONTEND_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}"
+          curl -X GET "https://api.render.com/deploy/srv-${{ secrets.RENDER_FRONTEND_SERVICE_ID }}?key=${{ secrets.RENDER_FRONTEND_API_KEY }}"
 
   tag_release:
     needs: [deploy_frontend]
