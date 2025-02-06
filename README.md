@@ -34,7 +34,7 @@ The **Fullstack Blog App** is a feature-rich **MERN** (MongoDB, Express.js, Reac
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 ### **Frontend**
 
