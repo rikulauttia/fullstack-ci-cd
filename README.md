@@ -1,8 +1,13 @@
-# 🚀 Fullstack Blog App | CI/CD Deployed on Render
+# 🚀 Full Stack Blog Platform
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/rikulauttia/fullstack-ci-cd/deployment.yml?branch=main)
-![GitHub last commit](https://img.shields.io/github/last-commit/rikulauttia/fullstack-ci-cd)
-![GitHub stars](https://img.shields.io/github/stars/rikulauttia/fullstack-ci-cd?style=social)
+![GitHub CI/CD](https://img.shields.io/github/workflow/status/rikulauttia/fullstack-ci-cd/deployment?style=for-the-badge)
+![Code Coverage](https://img.shields.io/codecov/c/github/rikulauttia/fullstack-ci-cd?style=for-the-badge)
+![License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/rikulauttia/fullstack-ci-cd?style=for-the-badge)
+
+> **Note**: Exercises 11.1 - 11.19 are available in the [Pokedex repository](https://github.com/rikulauttia/full-stack-open-pokedex)
+
+A cutting-edge blog platform built with the MERN stack, featuring enterprise-grade CI/CD practices, comprehensive testing, and cloud-native architecture. Experience the live demo at [fullstack-ci-cd-frontend.onrender.com](https://fullstack-ci-cd-frontend.onrender.com/).
 
 ## 🌍 Live Demo
 
@@ -85,3 +90,19 @@ The **Fullstack Blog App** is a feature-rich **MERN** (MongoDB, Express.js, Reac
 git clone https://github.com/rikulauttia/fullstack-ci-cd.git
 cd fullstack-ci-cd
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🌟 Acknowledgments
+
+Special thanks to:
+
+- The Full Stack Open community
+- Contributors and maintainers
+- Our amazing users who provide valuable feedback
+
+---
+
+Built with ❤️ by [Riku Lauttia](https://github.com/rikulauttia)
