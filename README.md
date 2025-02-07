@@ -9,14 +9,14 @@
 
 A cutting-edge blog platform built with the MERN stack, featuring enterprise-grade CI/CD practices, comprehensive testing, and cloud-native architecture. Experience the live demo at [fullstack-ci-cd-frontend.onrender.com](https://fullstack-ci-cd-frontend.onrender.com/).
 
-## 🌍 Live Demo
+## Live Demo
 
 - **Frontend:** [Live Site 🌐](https://fullstack-ci-cd-frontend.onrender.com/)
 - **Backend API:** [Live API 📡](https://fullstack-ci-cd-backend.onrender.com/)
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The **Fullstack Blog App** is a feature-rich **MERN** (MongoDB, Express.js, React, Node.js) application that allows users to **create, read, update, and delete (CRUD)** blog posts.
 
@@ -28,7 +28,7 @@ The **Fullstack Blog App** is a feature-rich **MERN** (MongoDB, Express.js, Reac
 
 ---
 
-## ✨ Features
+## Features
 
 ✅ **User Authentication:** Secure login/logout with JWT.  
 ✅ **Blog Management:** Create, edit, and delete blog posts.  
